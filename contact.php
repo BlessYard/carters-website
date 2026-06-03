@@ -119,6 +119,7 @@ $page_desc  = "Get in touch with Carter's Academy for Remarkable Excellence. Con
   </div>
 </div>
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31722.76386844223!2d-10.673827724038189!3d6.349294442983788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf09fe4fe08fcf6b%3A0xbea8ddf7700b4b13!2sMount%20Barclay%2C%20Liberia!5e0!3m2!1sen!2srw!4v1780473875871!5m2!1sen!2srw" width="1260" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <style>
 .contact-info-list{display:flex;flex-direction:column;gap:1.25rem}
 .ci-item{display:flex;align-items:flex-start;gap:1rem}
