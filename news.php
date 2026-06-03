@@ -113,6 +113,5 @@ $page_desc  = "Stay updated with the latest news, events, and announcements from
 </style>
 
 <?php include 'php/footer.php'; ?>
-<?php include 'php/scripts.php'; ?>
 </body>
 </html>

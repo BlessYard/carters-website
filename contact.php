@@ -138,6 +138,5 @@ $page_desc  = "Get in touch with Carter's Academy for Remarkable Excellence. Con
 </style>
 
 <?php include 'php/footer.php'; ?>
-<?php include 'php/scripts.php'; ?>
 </body>
 </html>

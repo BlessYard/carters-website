@@ -201,6 +201,5 @@ $page_desc  = "Apply for admission at Carter's Academy for Remarkable Excellence
 </style>
 
 <?php include 'php/footer.php'; ?>
-<?php include 'php/scripts.php'; ?>
 </body>
 </html>

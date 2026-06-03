@@ -141,6 +141,5 @@ $page_desc  = "Meet the dedicated teaching staff at Carter's Academy for Remarka
 </style>
 
 <?php include 'php/footer.php'; ?>
-<?php include 'php/scripts.php'; ?>
 </body>
 </html>

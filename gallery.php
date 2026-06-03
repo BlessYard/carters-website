@@ -93,6 +93,6 @@ $page_desc  = "Browse the CARE Academy photo gallery — school life, events, cl
 </style>
 
 <?php include 'php/footer.php'; ?>
-<?php include 'php/scripts.php'; ?>
+
 </body>
 </html>

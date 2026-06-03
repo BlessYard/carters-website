@@ -83,7 +83,7 @@
     <div class="container">
       <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
         <span>&copy; <?= date('Y') ?> Carter's Academy for Remarkable Excellence (CARE Academy). All rights reserved.</span>
-        <span>Established 2025 &bull; Monrovia, Liberia &bull; Faith-Based Education</span>
+        <span><a href="https://www.tecliberia.com" target="_blank" rel="noopener noreferrer">Developed by TEC Liberia</a></span>
       </div>
     </div>
   </div>

@@ -311,6 +311,5 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
 </section>
 
 <?php include 'php/footer.php'; ?>
-<?php include 'php/scripts.php'; ?>
 </body>
 </html>

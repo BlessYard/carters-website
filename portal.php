@@ -57,6 +57,5 @@ $page_desc  = "CARE Academy Student Portal — login to access your results, tim
 </style>
 
 <?php include 'php/footer.php'; ?>
-<?php include 'php/scripts.php'; ?>
 </body>
 </html>
