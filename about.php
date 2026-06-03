@@ -2,11 +2,6 @@
 $page_title = "About Us | CARE Academy — Carter's Academy for Remarkable Excellence";
 $page_desc  = "Learn about CARE Academy's history, mission, vision, and core values. A faith-based school in Liberia committed to Light Beyond Darkness.";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head><?php include 'php/head.php'; ?></head>
-<body>
-
 <?php include 'php/header.php'; ?>
 
 <!-- PAGE HERO -->

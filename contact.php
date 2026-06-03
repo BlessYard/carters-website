@@ -2,11 +2,6 @@
 $page_title = "Contact Us | CARE Academy — Monrovia, Liberia";
 $page_desc  = "Get in touch with Carter's Academy for Remarkable Excellence. Contact us for admissions, enquiries, or to visit our school in Monrovia, Liberia.";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head><?php include 'php/head.php'; ?></head>
-<body>
-
 <?php include 'php/header.php'; ?>
 
 <section class="page-hero">

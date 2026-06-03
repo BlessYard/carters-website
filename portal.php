@@ -2,10 +2,6 @@
 $page_title = "Student Portal | CARE Academy";
 $page_desc  = "CARE Academy Student Portal — login to access your results, timetable, and school resources.";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head><?php include 'php/head.php'; ?></head>
-<body>
 
 <?php include 'php/header.php'; ?>
 

@@ -2,11 +2,6 @@
 $page_title = "Gallery | CARE Academy — School Life in Pictures";
 $page_desc  = "Browse the CARE Academy photo gallery — school life, events, classrooms, and campus moments at Carter's Academy for Remarkable Excellence.";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head><?php include 'php/head.php'; ?></head>
-<body>
-
 <?php include 'php/header.php'; ?>
 
 <section class="page-hero">

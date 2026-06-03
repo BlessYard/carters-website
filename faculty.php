@@ -2,11 +2,6 @@
 $page_title = "Our Faculty | CARE Academy — Meet Our Teachers";
 $page_desc  = "Meet the dedicated teaching staff at Carter's Academy for Remarkable Excellence. Qualified, passionate educators committed to student success in Liberia.";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head><?php include 'php/head.php'; ?></head>
-<body>
-
 <?php include 'php/header.php'; ?>
 
 <section class="page-hero">

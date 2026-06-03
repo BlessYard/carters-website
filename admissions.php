@@ -2,11 +2,6 @@
 $page_title = "Admissions | CARE Academy — Apply for 2025/2026";
 $page_desc  = "Apply for admission at Carter's Academy for Remarkable Excellence. Primary and Secondary school enrollment open for 2025/2026.";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head><?php include 'php/head.php'; ?></head>
-<body>
-
 <?php include 'php/header.php'; ?>
 
 <section class="page-hero">

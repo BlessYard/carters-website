@@ -2,10 +2,6 @@
 $page_title = "Academics | CARE Academy — Primary & Secondary School Liberia";
 $page_desc  = "Explore CARE Academy's academic programmes — Primary School (Grades 1-6) and Secondary School (Grades 7-12). Rigorous curriculum aligned with Liberian national standards.";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head><?php include 'php/head.php'; ?></head>
-<body>
 
 <?php include 'php/header.php'; ?>
 
