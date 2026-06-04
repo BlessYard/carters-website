@@ -11,8 +11,49 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
 
   <?php include 'php/header.php'; ?>
 
+   <section class="hero-slider">
+        <div class="slide slide-one active">
+            <img class="slide-bg" src="assets/images/banner1.jpeg" alt="Students learning">
+            <div class="container slide-content">
+                <span class="slide-kicker">Welcome to CARE Academy</span>
+                <h1>Carter's Academy for Remarkable Excellence</h1>
+                <p>Light Beyond Darkness - quality, affordable and inclusive education for every child.</p>
+                <div class="hero-ctas">
+                    <a class="btn btn-care" href="admission.php">Apply Now</a>
+                    <a class="btn btn-outline" href="about.php">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide-two">
+            <img class="slide-bg" src="assets/images/banner2.jpeg" alt="School event">
+            <div class="container slide-content">
+                <span class="slide-kicker">Learning, Faith and Character</span>
+                <h1>Shaping future leaders with strong values</h1>
+                <p>We combine excellence in academics with discipline, respect and innovation.</p>
+                <div class="hero-ctas">
+                    <a class="btn btn-care" href="contact.php">Contact Us</a>
+                    <a class="btn btn-outline" href="gallery.php">See Gallery</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide-three">
+            <img class="slide-bg" src="assets/images/banner3.jpeg" alt="Classroom">
+            <div class="container slide-content">
+                <span class="slide-kicker">Primary and Secondary School</span>
+                <h1>A supportive place where every learner can thrive</h1>
+                <p>We welcome families and partners who believe in child development and community impact.</p>
+                <div class="hero-ctas">
+                    <a class="btn btn-care" href="donation.php">Support Our Work</a>
+                    <a class="btn btn-outline" href="eportal.php">E-Portal</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </div>
+    </section>
 <!-- ===== HERO ===== -->
-<section class="hero-section" id="home">
+<!-- <section class="hero-section" id="home">
   <div class="hero-overlay"></div>
   <div class="hero-particles"></div>
   <div class="container hero-content">
@@ -44,7 +85,7 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
     <span>Scroll Down</span>
     <i class="fas fa-chevron-down"></i>
   </div>
-</section>
+</section> -->
 
 <!-- ===== QUICK INFO STRIP ===== -->
 <div class="quick-strip">
@@ -96,7 +137,7 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
     <div class="row align-items-center g-5">
       <div class="col-lg-6 reveal">
         <div class="welcome-img-wrap">
-          <img src="images/school-building.jpg" alt="CARE Academy Campus" class="img-fluid rounded-3">
+          <img src="assets/images/banner3.jpeg" alt="CARE Academy Campus" class="img-fluid rounded-3">
           <div class="welcome-badge">
             <div class="wb-year">Est.</div>
             <div class="wb-num">2025</div>
