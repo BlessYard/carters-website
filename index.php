@@ -12,7 +12,8 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
 
   <?php include 'php/header.php'; ?>
 
-   <section class="hero-slider">
+
+    <section class="hero-slider">
         <div class="slide slide-one active">
             <img class="slide-bg" src="assets/images/banner1.jpeg" alt="Students learning">
             <div class="container slide-content">
