@@ -58,7 +58,7 @@ $page_desc  = "Learn about CARE Academy's history, mission, vision, and core val
       </div>
       <div class="col-lg-6 reveal reveal-delay-2">
         <div class="about-img-wrap">
-          <img src="images/about-school.jpg" alt="CARE Academy" class="img-fluid rounded-3">
+          <img src="assets/images/caresfamily.jpeg" alt="CARE Academy" class="img-fluid rounded-3">
           <div class="about-motto-badge">
             <i class="fas fa-quote-left"></i>
             <span>"Light Beyond<br>Darkness"</span>
@@ -175,6 +175,5 @@ $page_desc  = "Learn about CARE Academy's history, mission, vision, and core val
 </style>
 
 <?php include 'php/footer.php'; ?>
-<?php include 'php/scripts.php'; ?>
 </body>
 </html>

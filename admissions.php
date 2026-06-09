@@ -17,7 +17,81 @@ $page_desc  = "Apply for admission at Carter's Academy for Remarkable Excellence
     </nav>
   </div>
 </section>
-
+<!-- ===== NO CHILD LEFT BEHIND PROGRAMME ===== -->
+<section class="section-pad" style="background:var(--light)" id="nclb">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5 reveal">
+      <div class="col-lg-8">
+        <div class="nclb-adm-flag"><i class="fas fa-star me-2"></i>Special Programme — Act Before July 2026</div>
+        <h2 class="section-title mt-3">"No Child Should Be Left Behind<br>When It Comes to Education"</h2>
+        <div class="divider center"></div>
+        <p class="section-subtitle mx-auto">Mr. & Mrs. Carter say education is the foundation for a brighter future. CARE Academy is opening its doors wider with a special registration opportunity — available for a limited time only.</p>
+      </div>
+    </div>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-7 reveal reveal-delay-1">
+        <div class="nclb-adm-card">
+          <div class="nclb-adm-head">
+            <i class="fas fa-hand-holding-heart"></i>
+            <div>
+              <h4>Programme Overview</h4>
+              <p>Education is the foundation for a brighter future, and every child deserves the opportunity to learn and succeed. Through this programme, CARE Academy is committed to helping more children gain access to quality, faith-based education.</p>
+              <p>We encourage all parents and guardians to register their children <strong>before the end of July 2026.</strong></p>
+            </div>
+          </div>
+          <div class="nclb-details-grid">
+            <div class="nclb-detail-item nclb-detail--gold">
+              <i class="fas fa-tag"></i>
+              <div><strong>Registration & Tuition Fee</strong><span class="nclb-fee">LRD $10,000</span><em>One-time payment only</em></div>
+            </div>
+            <div class="nclb-detail-item">
+              <i class="fas fa-calendar-times"></i>
+              <div><strong>Programme Deadline</strong><span>End of July 2026</span><em>Regular rates apply after this date</em></div>
+            </div>
+            <div class="nclb-detail-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div><strong>Available Classes</strong><span>Grade 1 — Grade 8</span><em>Open to primary & lower secondary</em></div>
+            </div>
+            <div class="nclb-detail-item">
+              <i class="fas fa-users"></i>
+              <div><strong>Spaces Per Class</strong><span>10 Students Only</span><em>First-come, first-served basis</em></div>
+            </div>
+          </div>
+          <div class="nclb-warning">
+            <i class="fas fa-exclamation-triangle"></i>
+            <div><strong>Don't miss this opportunity!</strong> Spaces are strictly limited to 10 students per class. Once filled, no more applications will be accepted under this programme rate.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 reveal reveal-delay-2">
+        <div class="nclb-sidebar">
+          <div class="nclb-sb-head">Programme at a Glance</div>
+          <div class="nclb-sb-body">
+            <?php $glance=[
+              ['fas fa-check-circle','Special one-time fee of LRD $10,000'],
+              ['fas fa-check-circle','Covers full registration & tuition'],
+              ['fas fa-check-circle','Available for Grades 1 to 8'],
+              ['fas fa-check-circle','Only 10 students accepted per class'],
+              ['fas fa-check-circle','First-come, first-served admission'],
+              ['fas fa-check-circle','Deadline: End of July 2026'],
+              ['fas fa-check-circle','Faith-based, caring environment'],
+              ['fas fa-check-circle','Regular rates resume after July 2026'],
+            ]; foreach($glance as [$icon,$text]): ?>
+            <div class="nclb-sb-item"><i class="<?=$icon?>"></i><span><?=$text?></span></div>
+            <?php endforeach; ?>
+          </div>
+          <div class="nclb-sb-footer">
+            <div class="nclb-motto"><i class="fas fa-quote-left me-2"></i>"Light Beyond Darkness"</div>
+            <p>Together, let us ensure that no child is left behind when it comes to education.</p>
+            <a href="#apply" class="btn-care btn-primary-care w-100 justify-content-center">
+              <i class="fas fa-file-alt"></i> Apply Under This Programme
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- INTRO -->
 <section class="section-pad">
   <div class="container">
@@ -198,6 +272,38 @@ $page_desc  = "Apply for admission at Carter's Academy for Remarkable Excellence
 .fee-amount{font-family:var(--font-head);font-size:1.5rem;font-weight:700;color:var(--gold);margin-bottom:.5rem}
 .apply-form-wrap{background:var(--white);border-radius:var(--radius-lg);padding:2.5rem;box-shadow:var(--shadow-md);border:1px solid var(--border-light)}
 @media(max-width:575px){.adm-info-grid{grid-template-columns:1fr}.apply-form-wrap{padding:1.5rem}}
+/* NCLB – admissions page */
+.nclb-adm-flag{display:inline-flex;align-items:center;background:var(--gold);color:var(--dark-deep);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.5rem 1.1rem;border-radius:100px}
+.nclb-adm-card{background:var(--white);border:1.5px solid var(--border-light);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)}
+.nclb-adm-head{background:var(--dark);padding:2rem;display:flex;gap:1.25rem;align-items:flex-start}
+.nclb-adm-head i{font-size:2rem;color:var(--gold);flex-shrink:0;margin-top:.2rem}
+.nclb-adm-head h4{font-family:var(--font-head);font-size:1.2rem;font-weight:700;color:var(--white);margin-bottom:.65rem}
+.nclb-adm-head p{font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:.5rem}
+.nclb-adm-head p:last-child{margin-bottom:0}
+.nclb-adm-head strong{color:var(--gold)}
+.nclb-details-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.nclb-detail-item{padding:1.25rem 1.5rem;border-right:1px solid var(--border-light);border-bottom:1px solid var(--border-light);display:flex;align-items:flex-start;gap:.85rem}
+.nclb-detail-item:nth-child(even){border-right:none}
+.nclb-detail-item:nth-last-child(-n+2){border-bottom:none}
+.nclb-detail--gold{background:var(--gold-pale)}
+.nclb-detail-item i{color:var(--gold);font-size:1.1rem;margin-top:.2rem;flex-shrink:0}
+.nclb-detail-item strong{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:.2rem}
+.nclb-fee{display:block;font-family:var(--font-head);font-size:1.5rem;font-weight:700;color:var(--dark);line-height:1.1;margin-bottom:.15rem}
+.nclb-detail-item span{display:block;font-size:.95rem;font-weight:700;color:var(--dark);line-height:1.2;margin-bottom:.1rem}
+.nclb-detail-item em{display:block;font-size:.78rem;font-style:normal;color:var(--muted)}
+.nclb-warning{background:#fff8e7;border-left:4px solid var(--gold);padding:1.1rem 1.5rem;display:flex;align-items:flex-start;gap:.85rem;font-size:.88rem;line-height:1.7;color:var(--dark)}
+.nclb-warning i{color:var(--gold);flex-shrink:0;margin-top:.2rem}
+.nclb-warning strong{display:block;margin-bottom:.25rem;font-weight:700}
+.nclb-sidebar{background:var(--white);border:1.5px solid var(--border-light);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)}
+.nclb-sb-head{background:var(--dark);color:var(--white);font-size:.75rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;padding:.9rem 1.5rem}
+.nclb-sb-body{padding:1rem 1.5rem}
+.nclb-sb-item{display:flex;align-items:center;gap:.75rem;padding:.6rem 0;border-bottom:1px solid var(--border-light);font-size:.88rem;color:var(--dark)}
+.nclb-sb-item:last-child{border-bottom:none}
+.nclb-sb-item i{color:var(--gold);font-size:.9rem;flex-shrink:0}
+.nclb-sb-footer{padding:1.5rem;background:var(--dark)}
+.nclb-motto{font-family:var(--font-head);font-size:.95rem;font-style:italic;color:var(--gold);margin-bottom:.5rem}
+.nclb-sb-footer p{font-size:.82rem;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:1.25rem}
+@media(max-width:575px){.nclb-details-grid{grid-template-columns:1fr}.nclb-detail-item{border-right:none!important}.nclb-adm-head{flex-direction:column}}
 </style>
 
 <?php include 'php/footer.php'; ?>

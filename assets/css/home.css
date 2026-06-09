@@ -113,6 +113,25 @@
 }
 .hero-scroll-hint i { font-size: .9rem; }
 @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} } */
+/* No Child Left Behind – homepage banner */
+.nclb-section{padding:72px 0;background:var(--light)}
+.nclb-inner{background:linear-gradient(135deg,var(--dark-deep) 0%,var(--dark) 60%,var(--dark-mid) 100%);border-radius:var(--radius-lg);padding:3rem;position:relative;overflow:hidden;box-shadow:var(--shadow-lg)}
+.nclb-inner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(200,167,78,.12) 0%,transparent 60%)}
+.nclb-badge{display:inline-flex;align-items:center;background:rgba(200,167,78,.18);border:1px solid rgba(200,167,78,.4);color:var(--gold);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.4rem .9rem;border-radius:100px;margin-bottom:1.25rem}
+.nclb-title{font-family:var(--font-head);font-size:clamp(1.4rem,3vw,2.1rem);font-weight:700;color:var(--white);line-height:1.3;margin-bottom:.85rem}
+.nclb-sub{color:rgba(255,255,255,.72);font-size:.95rem;line-height:1.8;margin-bottom:1.5rem}
+.nclb-highlights{display:flex;flex-direction:column;gap:.85rem}
+.nclb-hi{display:flex;align-items:flex-start;gap:.9rem}
+.nclb-hi i{color:var(--gold);font-size:1.05rem;margin-top:.2rem;flex-shrink:0}
+.nclb-hi strong{display:block;font-size:.92rem;font-weight:700;color:var(--white)}
+.nclb-hi span{font-size:.8rem;color:rgba(255,255,255,.6)}
+.nclb-deco{position:relative;display:flex;align-items:center;justify-content:center;height:260px}
+.nclb-deco-ring{position:absolute;width:220px;height:220px;border-radius:50%;border:2px dashed rgba(200,167,78,.35);animation:spin 18s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.nclb-deco-inner{width:170px;height:170px;background:rgba(200,167,78,.12);border:2px solid rgba(200,167,78,.3);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:.35rem;z-index:1}
+.nclb-deco-inner i{font-size:2rem;color:var(--gold)}
+.nclb-deco-inner span{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.nclb-deco-inner strong{font-family:var(--font-head);font-size:1rem;font-weight:700;color:var(--white);line-height:1.3}
 
 /* ===== QUICK STRIP ===== */
 .quick-strip { background: var(--white); box-shadow: 0 4px 20px rgba(74,52,20,.1); }

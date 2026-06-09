@@ -332,6 +332,39 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
     </div>
   </div>
 </section>
+<!-- ===== NO CHILD LEFT BEHIND ===== -->
+<section class="nclb-section reveal">
+  <div class="container">
+    <div class="nclb-inner">
+      <div class="nclb-badge"><i class="fas fa-star me-1"></i> Special Programme</div>
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h2 class="nclb-title">"No Child Should Be Left Behind<br class="d-none d-md-block"> When It Comes to Education"</h2>
+          <p class="nclb-sub">Mr. & Mrs. Carter believe education is the foundation for a brighter future. CARE Academy is committed to helping every child access quality education — right now, at a special rate.</p>
+          <div class="nclb-highlights">
+            <div class="nclb-hi"><i class="fas fa-tag"></i><div><strong>LRD $10,000</strong><span>Registration & Tuition — one-time payment only</span></div></div>
+            <div class="nclb-hi"><i class="fas fa-calendar-times"></i><div><strong>Deadline: End of July 2026</strong><span>Regular rates apply after July 2026</span></div></div>
+            <div class="nclb-hi"><i class="fas fa-graduation-cap"></i><div><strong>Grades 1 – 8</strong><span>Only 10 students accepted per class</span></div></div>
+          </div>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="admissions.php#nclb" class="btn-care btn-primary-care"><i class="fas fa-file-alt"></i> Register Before July 2026</a>
+            <a href="admissions.php#nclb" class="btn-care btn-outline-care">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="nclb-deco">
+            <div class="nclb-deco-ring"></div>
+            <div class="nclb-deco-inner">
+              <i class="fas fa-child"></i>
+              <span>Limited Spaces</span>
+              <strong>First-Come,<br>First-Served</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ===== CTA STRIP ===== -->
 <section class="cta-strip reveal">

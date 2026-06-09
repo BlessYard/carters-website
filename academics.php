@@ -132,7 +132,56 @@ $page_desc  = "Explore CARE Academy's academic programmes — Primary School (Gr
     </div>
   </div>
 </section>
-
+<!-- ===== SKILLS TRAINING ===== -->
+<section class="section-pad" style="background:var(--light)" id="skills">
+  <div class="container">
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-lg-7 reveal">
+        <span class="section-label">Beyond the Classroom</span>
+        <h2 class="section-title">Skills Training Programmes</h2>
+        <div class="divider"></div>
+        <p style="color:var(--muted);margin-bottom:1rem">At CARE Academy, we teach and train our students to succeed in the world beyond Liberia. Our goal is to provide quality education alongside practical skills that prepare students for future opportunities and self-reliance.</p>
+        <p style="color:var(--muted)">We do not want our students to learn without practical application. Our programmes are designed to equip learners with knowledge, hands-on experience, and skills that help them create opportunities for themselves and contribute positively to society.</p>
+      </div>
+      <div class="col-lg-5 reveal reveal-delay-2">
+        <div class="skills-quote-box">
+          <i class="fas fa-hands-helping skills-quote-icon"></i>
+          <p>"Education without practical skills is incomplete. At CARE Academy, every child leaves ready for the real world."</p>
+          <span>— CARE Academy Mission</span>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <?php
+      $skills = [
+        ['fas fa-soap',          '#1', 'Soap Making',       'Students learn to produce quality soaps from raw materials — a marketable skill for home use and small business.'],
+        ['fas fa-archway',       '#2', 'Hanger Making',     'Practical craftsmanship in creating hangers, developing creativity, precision, and entrepreneurial thinking.'],
+        ['fas fa-tshirt',        '#3', 'Tie and Dye',       'Students master tie and dye fabric production, a vibrant craft with strong market demand across West Africa.'],
+        ['fas fa-birthday-cake', '#4', 'Pastry Production', 'From bread to cakes, students gain hands-on bakery skills that open income-generating opportunities.'],
+        ['fas fa-laptop',        '#5', 'Computer Training', 'Foundational digital literacy — computing, typing, basic applications, and internet skills for the modern world.'],
+      ];
+      foreach ($skills as $i => [$icon, $num, $title, $desc]):
+      ?>
+      <div class="col-sm-6 col-lg-4 reveal reveal-delay-<?= ($i % 3) + 1 ?>">
+        <div class="skill-card">
+          <div class="skill-num"><?= $num ?></div>
+          <div class="skill-icon-wrap"><i class="<?= $icon ?>"></i></div>
+          <h5><?= $title ?></h5>
+          <p><?= $desc ?></p>
+        </div>
+      </div>
+      <?php endforeach; ?>
+      <div class="col-sm-6 col-lg-4 reveal reveal-delay-3">
+        <div class="skill-card skill-card--cta">
+          <i class="fas fa-star skill-cta-star"></i>
+          <h5>Holistic Education</h5>
+          <p>Skills programmes run alongside core academics so every CARE Academy graduate is academically excellent and practically equipped.</p>
+          <a href="admissions.php" class="btn-care btn-primary-care mt-3">Enrol Your Child</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <style>
 .level-badge-wrap{position:relative;padding-bottom:1.5rem}
 .level-img img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--light);box-shadow:var(--shadow-lg)}
@@ -140,9 +189,26 @@ $page_desc  = "Explore CARE Academy's academic programmes — Primary School (Gr
 .subject-item{display:flex;align-items:center;gap:.5rem;font-size:.88rem;font-weight:600;color:var(--dark);padding:.55rem .75rem;background:var(--white);border:1px solid var(--border-light);border-radius:var(--radius)}
 .subject-item i{color:var(--gold);font-size:.85rem;flex-shrink:0}
 .curr-card:hover{background:rgba(255,255,255,.1)!important;transform:translateY(-3px)}
+/* Skills Training */
+.skills-quote-box{background:var(--dark);border-radius:var(--radius-lg);padding:2.25rem;position:relative;overflow:hidden}
+.skills-quote-box::before{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:rgba(200,167,78,.1)}
+.skills-quote-icon{font-size:2rem;color:var(--gold);margin-bottom:1rem;display:block}
+.skills-quote-box p{font-family:var(--font-head);font-size:1.05rem;font-style:italic;color:rgba(255,255,255,.9);line-height:1.75;margin-bottom:.85rem}
+.skills-quote-box span{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.skill-card{background:var(--white);border:1.5px solid var(--border-light);border-radius:var(--radius-lg);padding:2rem;height:100%;position:relative;transition:var(--transition);box-shadow:var(--shadow-sm)}
+.skill-card:hover{box-shadow:var(--shadow-md);transform:translateY(-4px);border-color:var(--gold)}
+.skill-card--cta{background:var(--dark);border-color:var(--dark);text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.skill-card--cta h5{color:var(--white)}
+.skill-card--cta p{color:rgba(255,255,255,.7)}
+.skill-cta-star{font-size:2rem;color:var(--gold);margin-bottom:1rem}
+.skill-num{position:absolute;top:1.25rem;right:1.25rem;font-family:var(--font-head);font-size:2rem;font-weight:700;color:var(--gold);opacity:.2;line-height:1}
+.skill-icon-wrap{width:56px;height:56px;background:var(--gold-pale);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:var(--gold);margin-bottom:1.1rem;transition:var(--transition)}
+.skill-card:hover .skill-icon-wrap{background:var(--gold);color:var(--white)}
+.skill-card h5{font-family:var(--font-head);font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:.6rem}
+.skill-card p{font-size:.88rem;color:var(--muted);line-height:1.75;margin:0}
 </style>
 
 <?php include 'php/footer.php'; ?>
-<?php include 'php/scripts.php'; ?>
+
 </body>
 </html>
