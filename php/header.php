@@ -26,7 +26,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center gap-3">
-        <span><i class="fas fa-phone-alt me-1"></i> +231 555 000 000</span>
+        <span><i class="fas fa-phone-alt me-1"></i> +231 880-469-995</span>
         <span class="divider-v"></span>
         <span><i class="fas fa-envelope me-1"></i> info@careacademy.edu.lr</span>
       </div>
