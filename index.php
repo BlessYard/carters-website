@@ -182,6 +182,43 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
   </div>
 </section>
 
+<!-- ===== MESSAGE FROM THE PROPRIETORS ===== -->
+<section class="section-pad" style="background:var(--light)">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Photo -->
+      <div class="col-lg-5 reveal">
+        <div class="proprietor-img-wrap">
+          <img src="assets/images/mr&mrs-carter.jpeg" alt="Mr. & Mrs. Carter">
+          <div class="proprietor-quote-icon"><i class="fas fa-quote-left"></i></div>
+        </div>
+      </div>
+
+      <!-- Message -->
+      <div class="col-lg-7 reveal reveal-delay-2">
+        <span class="section-label">A Word From Our Founders</span>
+        <h2 class="section-title">Message From the Proprietors</h2>
+        <div class="divider"></div>
+        <blockquote class="proprietor-quote">
+          "Education is the foundation for a brighter future. At CARE Academy, we are not just building a school — we are building a generation. Every child who walks through our doors carries the potential to change Liberia and the world. We started CARE Academy because we believe that when you invest in a child's education, you invest in a community's future. We are dedicated to nurturing not just the minds of our students, but their character, their faith, and their confidence to go out and make a difference. Together, we are committed to ensuring that no child is left behind when it comes to education."
+        </blockquote>
+        <div class="proprietor-info">
+          <div class="proprietor-avatar-group">
+            <div class="proprietor-avatar"><i class="fas fa-user"></i></div>
+            <div class="proprietor-avatar"><i class="fas fa-user"></i></div>
+          </div>
+          <div>
+            <div class="proprietor-name">Mr. & Mrs. Carter</div>
+            <div class="proprietor-role">Proprietors & Co-Founders, CARE Academy</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ===== CORE VALUES ===== -->
 <section class="section-pad bg-off-white">
   <div class="container">

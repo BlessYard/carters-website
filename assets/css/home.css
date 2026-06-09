@@ -190,7 +190,84 @@
   display: flex; align-items: center;
   font-size: .9rem; font-weight: 600; color: var(--dark);
 }
-
+/* Proprietors Section */
+.proprietor-img-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: visible;
+}
+.proprietor-img-wrap img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+.proprietor-quote-icon {
+  position: absolute;
+  bottom: -18px;
+  right: -18px;
+  width: 52px;
+  height: 52px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--dark);
+  box-shadow: var(--shadow-md);
+  border: 4px solid var(--white);
+}
+.proprietor-quote {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.9;
+  border-left: 4px solid var(--gold);
+  padding-left: 1.25rem;
+  margin: 0 0 2rem;
+}
+.proprietor-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.proprietor-avatar-group {
+  display: flex;
+}
+.proprietor-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 3px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--dark);
+  box-shadow: var(--shadow-sm);
+}
+.proprietor-avatar:last-child {
+  margin-left: -14px;
+}
+.proprietor-name {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+.proprietor-role {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
 /* ===== PROGRAMMES ===== */
 .programme-card {
   display: flex; gap: 1.5rem; align-items: flex-start;
