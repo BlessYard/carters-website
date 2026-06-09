@@ -451,3 +451,90 @@ h1, h2, h3, h4, h5 {
   .page-hero { padding: 56px 0 48px; }
   #scrollTop { bottom: 1.25rem; right: 1.25rem; }
 }
+/* ===== TEAM CARDS ===== */
+.team-card {
+  background: var(--white);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  height: 100%;
+}
+.team-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
+}
+.team-card--lead {
+  border-top: 3px solid var(--gold);
+}
+.team-img-wrap {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--light);
+}
+.team-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform .45s ease;
+}
+.team-card:hover .team-img-wrap img {
+  transform: scale(1.05);
+}
+.team-role-badge {
+  position: absolute;
+  bottom: .75rem;
+  left: .75rem;
+  background: var(--gold);
+  color: var(--dark);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .3rem .75rem;
+  border-radius: 100px;
+}
+.team-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+.team-name {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: .2rem;
+}
+.team-dept {
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .6rem;
+}
+.team-bio {
+  font-size: .85rem;
+  color: var(--muted);
+  line-height: 1.75;
+  margin: 0;
+}
+.team-group-label {
+  font-family: var(--font-body);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: var(--light);
+  border: 1.5px solid var(--border-light);
+  border-left: 4px solid var(--gold);
+  padding: .65rem 1.25rem;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+}

@@ -6,6 +6,7 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
 <html lang="en">
 <head>
   <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -331,41 +332,80 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
   </div>
 </section>
 
-<!-- ===== NEWS & EVENTS ===== -->
-<section class="section-pad bg-off-white">
+
+<!-- ===== LEADERSHIP & TEACHERS PREVIEW ===== -->
+<section class="section-pad" style="background:var(--light)">
   <div class="container">
-    <div class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3">
+    <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-5">
       <div class="reveal">
-        <span class="section-label">Latest Updates</span>
-        <h2 class="section-title mb-0">News & Events</h2>
+        <span class="section-label">The People Behind the Vision</span>
+        <h2 class="section-title mb-0">Leadership & Teachers</h2>
         <div class="divider"></div>
       </div>
-      <a href="news.php" class="btn-care btn-navy reveal">View All <i class="fas fa-arrow-right ms-1"></i></a>
+      <a href="faculty.php" class="btn-care btn-dark-care reveal">Meet Full Team <i class="fas fa-arrow-right ms-1"></i></a>
     </div>
     <div class="row g-4">
-      <?php
-      $news = [
-        ['📣', 'Admissions Open for 2025/2026',  'Carter\'s Academy is pleased to announce that enrollment is now open for the 2025/2026 academic year. Limited spaces available.',        'Admissions', 'June 1, 2025'],
-        ['🎓', 'Inaugural Graduation Ceremony',   'CARE Academy is preparing for its very first graduation ceremony. Join us in celebrating our pioneering class of students.',           'Events',     'May 20, 2025'],
-        ['⛪', 'Faith & Learning Week Announced',  'Our annual Faith & Learning Week will feature chapel services, community projects, and values-based workshops for all grades.', 'School Life', 'May 10, 2025'],
-      ];
-      foreach ($news as $i => [$emoji, $title, $excerpt, $cat, $date]):
-      ?>
-      <div class="col-md-4 reveal reveal-delay-<?= $i + 1 ?>">
-        <div class="news-card h-100">
-          <div class="news-emoji"><?= $emoji ?></div>
-          <div class="news-body">
-            <div class="news-meta">
-              <span class="news-cat"><?= $cat ?></span>
-              <span class="news-date"><i class="far fa-calendar-alt me-1"></i><?= $date ?></span>
-            </div>
-            <h5 class="news-title"><?= $title ?></h5>
-            <p class="news-excerpt"><?= $excerpt ?></p>
-            <a href="news.php" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+
+      <!-- Principal -->
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-1">
+        <div class="team-card team-card--lead">
+          <div class="team-img-wrap">
+            <img src="assets/images/principal.jpg" alt="Principal">
+            <div class="team-role-badge">Principal</div>
+          </div>
+          <div class="team-body">
+            <h6 class="team-name">Mr. Carter</h6>
+            <p class="team-dept">Founder & Principal</p>
+            <p class="team-bio">Passionate educator and visionary leader committed to quality, faith-based education for every child in Liberia.</p>
           </div>
         </div>
       </div>
-      <?php endforeach; ?>
+
+      <!-- Vice Principal -->
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-2">
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="assets/images/vice-principal.jpg" alt="Vice Principal">
+            <div class="team-role-badge">Vice Principal</div>
+          </div>
+          <div class="team-body">
+            <h6 class="team-name">Mrs. Carter</h6>
+            <p class="team-dept">Co-Founder & Vice Principal</p>
+            <p class="team-bio">Dedicated to student welfare, academic excellence, and building a school culture rooted in faith and integrity.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teacher 1 -->
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-3">
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="assets/images/teacher-1.jpg" alt="Primary Teacher">
+            <div class="team-role-badge">Teacher</div>
+          </div>
+          <div class="team-body">
+            <h6 class="team-name">Teacher Name</h6>
+            <p class="team-dept">Primary School · Grades 1–3</p>
+            <p class="team-bio">Nurturing young learners with patience, creativity, and a genuine love for foundational education.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teacher 2 -->
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-4">
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="assets/images/teacher-2.jpg" alt="Secondary Teacher">
+            <div class="team-role-badge">Teacher</div>
+          </div>
+          <div class="team-body">
+            <h6 class="team-name">Teacher Name</h6>
+            <p class="team-dept">Secondary School · Mathematics</p>
+            <p class="team-bio">Bringing energy and clarity to Mathematics, helping students build confidence and strong analytical skills.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

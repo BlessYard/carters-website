@@ -150,7 +150,101 @@ $page_desc  = "Learn about CARE Academy's history, mission, vision, and core val
     </div>
   </div>
 </section>
+<!-- ===== LEADERSHIP & TEACHERS ===== -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">The People Behind the Vision</span>
+      <h2 class="section-title">Our Leadership & Teachers</h2>
+      <div class="divider center"></div>
+      <p class="section-subtitle mx-auto">CARE Academy is led by passionate educators and guided by faith-centered leadership committed to every child's success.</p>
+    </div>
 
+    <!-- Leadership -->
+    <div class="team-group-label reveal">
+      <i class="fas fa-star me-2" style="color:var(--gold)"></i> School Leadership
+    </div>
+    <div class="row g-4 mb-5">
+
+      <div class="col-sm-6 col-lg-4 reveal reveal-delay-1">
+        <div class="team-card team-card--lead">
+          <div class="team-img-wrap">
+            <img src="assets/images/principal.jpg" alt="Principal">
+            <div class="team-role-badge">Principal</div>
+          </div>
+          <div class="team-body">
+            <h6 class="team-name">Mr. Carter</h6>
+            <p class="team-dept">Founder & Principal</p>
+            <p class="team-bio">A visionary leader and passionate educator who founded CARE Academy with the mission of providing quality, affordable, and inclusive education for every child in Liberia.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 reveal reveal-delay-2">
+        <div class="team-card team-card--lead">
+          <div class="team-img-wrap">
+            <img src="assets/images/vice-principal.jpg" alt="Vice Principal">
+            <div class="team-role-badge">Vice Principal</div>
+          </div>
+          <div class="team-body">
+            <h6 class="team-name">Mrs. Carter</h6>
+            <p class="team-dept">Co-Founder & Vice Principal</p>
+            <p class="team-bio">Dedicated to student welfare and academic excellence, Mrs. Carter plays a central role in shaping the school's culture of faith, discipline, and holistic development.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 reveal reveal-delay-3">
+        <div class="team-card team-card--lead">
+          <div class="team-img-wrap">
+            <img src="assets/images/administrator.jpg" alt="Administrator">
+            <div class="team-role-badge">Administrator</div>
+          </div>
+          <div class="team-body">
+            <h6 class="team-name">Staff Name</h6>
+            <p class="team-dept">School Administrator</p>
+            <p class="team-bio">Responsible for the day-to-day operations of CARE Academy, ensuring a smooth, organized, and welcoming environment for students, parents, and staff.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Teachers -->
+    <div class="team-group-label reveal">
+      <i class="fas fa-chalkboard-teacher me-2" style="color:var(--gold)"></i> Teaching Staff
+    </div>
+    <div class="row g-4">
+
+      <?php
+      $teachers = [
+        ['teacher-1.jpg',  'Teacher Name', 'Primary · Grades 1–3',    'A nurturing and creative educator building strong foundations in literacy and numeracy for our youngest learners.'],
+        ['teacher-2.jpg',  'Teacher Name', 'Primary · Grades 4–6',    'Dedicated to developing confident, curious, and capable learners ready for the secondary level.'],
+        ['teacher-3.jpg',  'Teacher Name', 'Secondary · English',     'Inspiring a love of language and literature, equipping students with strong communication and writing skills.'],
+        ['teacher-4.jpg',  'Teacher Name', 'Secondary · Mathematics', 'Making Mathematics accessible and exciting, helping students build solid analytical and problem-solving skills.'],
+        ['teacher-5.jpg',  'Teacher Name', 'Secondary · Science',     'Bringing the sciences to life through hands-on experiments and real-world applications in the classroom.'],
+        ['teacher-6.jpg',  'Teacher Name', 'ICT · All Levels',        'Equipping students with essential digital literacy skills to thrive in a technology-driven world.'],
+      ];
+      foreach($teachers as $i=>[$img,$name,$dept,$bio]):
+      ?>
+      <div class="col-sm-6 col-lg-4 reveal reveal-delay-<?=($i%3)+1?>">
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="assets/images/<?=$img?>" alt="<?=$name?>">
+            <div class="team-role-badge">Teacher</div>
+          </div>
+          <div class="team-body">
+            <h6 class="team-name"><?=$name?></h6>
+            <p class="team-dept"><?=$dept?></p>
+            <p class="team-bio"><?=$bio?></p>
+          </div>
+        </div>
+      </div>
+      <?php endforeach; ?>
+
+    </div>
+  </div>
+</section>
 <style>
 .about-fact{display:flex;align-items:center;gap:.75rem;padding:.85rem 1rem;background:var(--light);border-radius:var(--radius);border:1px solid var(--border-light)}
 .about-fact i{font-size:1.2rem;color:var(--gold);width:36px;text-align:center;flex-shrink:0}
