@@ -9,7 +9,7 @@ $page_desc  = $page_desc  ?? 'A faith-based Primary & Secondary school in Liberi
 <meta name="keywords" content="CARE Academy, Carter's Academy, Liberia school, primary school Liberia, secondary school Liberia, faith-based school Monrovia">
 <title><?= htmlspecialchars($page_title) ?></title>
 
-<link rel="icon" type="image/png" href="/assets/images/carter-logo.jpeg">
+<link rel="icon" type="image/png" href="assets/images/carter-logo.jpeg">
 
 <!-- Bootstrap 5 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -83,9 +83,6 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
 </li>
         <li class="nav-item">
           <a class="nav-link <?= $current_page === 'gallery' ? 'active' : '' ?>" href="gallery.php">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link <?= $current_page === 'faculty' ? 'active' : '' ?>" href="faculty.php">Faculty</a>
         </li>
         <li class="nav-item">
           <a class="nav-link <?= $current_page === 'news' ? 'active' : '' ?>" href="news.php">News</a>

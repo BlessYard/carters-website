@@ -6,7 +6,6 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
 <html lang="en">
 <head>
   <link rel="stylesheet" href="assets/css/home.css">
-  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
