@@ -29,43 +29,37 @@ $page_desc  = "Browse the CARE Academy photo gallery — school life, events, cl
       <button class="filter-btn" data-filter="sports">Sports</button>
     </div>
 
-    <!-- Gallery Grid -->
-    <div class="row g-3">
-      <?php
-      $items=[
-        ['campus','🏫','School Building','Our welcoming campus entrance'],
-        ['classroom','📚','Primary Classroom','Students engaged in English class'],
-        ['events','🎓','Graduation Day','Celebrating our first graduates'],
-        ['campus','🌿','School Grounds','Our peaceful outdoor space'],
-        ['classroom','🔬','Science Corner','Hands-on learning in action'],
-        ['sports','⚽','Football Match','Inter-class football tournament'],
-        ['events','⛪','Chapel Service','Weekly faith and values session'],
-        ['classroom','💻','ICT Lab','Learning digital skills'],
-        ['campus','📖','Library Area','Reading and research space'],
-        ['sports','🏃','Sports Day','Annual athletics competition'],
-        ['events','🎨','Art Exhibition','Showcasing student creativity'],
-        ['classroom','✏️','Mathematics Lesson','Building numeracy foundations'],
-      ];
-      foreach($items as $i=>[$cat,$emoji,$title,$desc]): ?>
-      <div class="col-6 col-md-4 col-lg-3 gallery-item reveal reveal-delay-<?=($i%4)+1?>" data-category="<?=$cat?>">
-        <div class="gallery-card">
-          <div class="gallery-thumb">
-            <div class="gallery-emoji"><?=$emoji?></div>
-            <img src="images/gallery/gallery-<?=$i+1?>.jpg"
-                 alt="<?=$title?>"
-                 onerror="this.style.display='none'"
-                 loading="lazy">
-            <div class="gallery-overlay">
-              <div class="gallery-info">
-                <h6><?=$title?></h6>
-                <p><?=$desc?></p>
-              </div>
-            </div>
+   <!-- Gallery Grid -->
+<div class="row g-3">
+  <?php
+  $items=[
+    ['events',   'CARE Academy Launch',  'Official launch of CARE Academy',           'launch-with-care.jpeg'],
+    ['campus',   'CARE Academy',         'Our school community',                      'care.jpeg'],
+    ['events',   'Carter Family',        'The Carter family at CARE Academy',         'caresfamily.jpeg'],
+    ['classroom','Classroom Learning',   'Students engaged in class',                 'classroom.jpeg'],
+    ['teachers', 'Our Teachers',         'Dedicated teaching staff',                  'teachers.jpeg'],
+    ['events',   'Acting Principal',     'Leadership at CARE Academy',                'acting-principal.jpeg'],
+    ['campus',   'School Activity',      'Students during school activity',           'activity.jpeg'],
+    ['campus',   'School Activity',      'Life at CARE Academy',                      'activity1.jpeg'],
+    ['campus',   'School Activity',      'Students and staff together',               'activity2.jpeg'],
+    ['campus',   'Carter Logo',          'Carter\'s Academy for Remarkable Excellence','carter-logo.jpeg'],
+  ];
+  foreach($items as $i=>[$cat,$title,$desc,$img]): ?>
+  <div class="col-6 col-md-4 col-lg-3 gallery-item reveal reveal-delay-<?=($i%4)+1?>" data-category="<?=$cat?>">
+    <div class="gallery-card">
+      <div class="gallery-thumb">
+        <img src="assets/images/<?=$img?>" alt="<?=$title?>" loading="lazy">
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <h6><?=$title?></h6>
+            <p><?=$desc?></p>
           </div>
         </div>
       </div>
-      <?php endforeach; ?>
     </div>
+  </div>
+  <?php endforeach; ?>
+</div>
 
     <!-- Upload CTA -->
     <div class="text-center mt-5 reveal">
