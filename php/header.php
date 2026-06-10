@@ -40,8 +40,10 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
 </div>
 
 <!-- ===== MAIN NAV ===== -->
+<!-- ===== MAIN NAV ===== -->
 <nav class="navbar navbar-expand-lg main-nav" id="mainNav">
   <div class="container">
+
     <!-- Brand -->
     <a class="navbar-brand nav-brand" href="index.php">
       <img src="assets/images/carter-logo.jpeg" alt="CARE Academy Logo" class="brand-logo">
@@ -51,51 +53,56 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
       </div>
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-   <ul class="navbar-nav align-items-lg-center gap-lg-1">
-  <li class="nav-item">
-    <a class="nav-link <?= $current_page === 'index' ? 'active' : '' ?>" href="index.php">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link <?= $current_page === 'about' ? 'active' : '' ?>" href="about.php">About</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?= in_array($current_page, ['academics','calendar']) ? 'active' : '' ?>"
-       href="#" data-bs-toggle="dropdown">Academics</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="academics.php">Overview</a></li>
-      <li><a class="dropdown-item" href="academics.php#primary">Primary School</a></li>
-      <li><a class="dropdown-item" href="academics.php#secondary">Secondary School</a></li>
-      <li><a class="dropdown-item" href="academics.php#skills">Skills Training</a></li>
-      <li><a class="dropdown-item" href="academics.php#curriculum">Curriculum</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="calendar.php">Calendar of Events</a></li>
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link <?= $current_page === 'admissions' ? 'active' : '' ?>" href="admissions.php">Admissions</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?= in_array($current_page, ['faculty','gallery','news']) ? 'active' : '' ?>"
-       href="#" data-bs-toggle="dropdown">School Life</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="faculty.php">Faculty & Staff</a></li>
-      <li><a class="dropdown-item" href="gallery.php">Gallery</a></li>
-      <li><a class="dropdown-item" href="news.php">News & Events</a></li>
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link <?= $current_page === 'donation' ? 'active' : '' ?>" href="donation.php">Donate</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link <?= $current_page === 'contact' ? 'active' : '' ?>" href="contact.php">Contact</a>
-  </li>
-  <li class="nav-item ms-lg-2">
-    <a class="nav-link nav-admit-btn btn-care" href="admissions.php#apply">Apply Now</a>
-  </li>
-</ul>
+    <!-- THIS WAS MISSING -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarMain">
+      <ul class="navbar-nav align-items-lg-center gap-lg-1">
+        <li class="nav-item">
+          <a class="nav-link <?= $current_page === 'index' ? 'active' : '' ?>" href="index.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= $current_page === 'about' ? 'active' : '' ?>" href="about.php">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle <?= in_array($current_page, ['academics','calendar']) ? 'active' : '' ?>"
+             href="#" data-bs-toggle="dropdown">Academics</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="academics.php">Overview</a></li>
+            <li><a class="dropdown-item" href="academics.php#primary">Primary School</a></li>
+            <li><a class="dropdown-item" href="academics.php#secondary">Secondary School</a></li>
+            <li><a class="dropdown-item" href="academics.php#skills">Skills Training</a></li>
+            <li><a class="dropdown-item" href="academics.php#curriculum">Curriculum</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="calendar.php">Calendar of Events</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= $current_page === 'admissions' ? 'active' : '' ?>" href="admissions.php">Admissions</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle <?= in_array($current_page, ['faculty','gallery','news']) ? 'active' : '' ?>"
+             href="#" data-bs-toggle="dropdown">School Life</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="faculty.php">Faculty & Staff</a></li>
+            <li><a class="dropdown-item" href="gallery.php">Gallery</a></li>
+            <li><a class="dropdown-item" href="news.php">News & Events</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= $current_page === 'donation' ? 'active' : '' ?>" href="donation.php">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= $current_page === 'contact' ? 'active' : '' ?>" href="contact.php">Contact</a>
+        </li>
+        <li class="nav-item ms-lg-2">
+          <a class="nav-link nav-admit-btn btn-care" href="admissions.php#apply">Apply Now</a>
+        </li>
+      </ul>
+    </div>
+    <!-- END collapse -->
+
   </div>
 </nav>

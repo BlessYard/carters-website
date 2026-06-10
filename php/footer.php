@@ -93,7 +93,21 @@
 <button id="scrollTop" aria-label="Scroll to top">
   <i class="fas fa-arrow-up"></i>
 </button>
-
+<!-- ===== FLOATING CONTACT BUTTONS ===== -->
+<div class="floating-contacts">
+  <a href="https://wa.me/231555000000" target="_blank" class="float-btn float-whatsapp" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>WhatsApp</span>
+  </a>
+  <a href="tel:+231555000000" class="float-btn float-call" aria-label="Call Us">
+    <i class="fas fa-phone-alt"></i>
+    <span>Call Us</span>
+  </a>
+  <a href="mailto:info@careacademy.edu.lr" class="float-btn float-email" aria-label="Email Us">
+    <i class="fas fa-envelope"></i>
+    <span>Email</span>
+  </a>
+</div>
 <!-- Bootstrap 5 JS Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Main JS -->
