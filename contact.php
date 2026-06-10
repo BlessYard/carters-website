@@ -35,14 +35,19 @@ $page_desc  = "Get in touch with Carter's Academy for Remarkable Excellence. Con
             <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
             <div>
               <strong>Address</strong>
-              <span>Monrovia, Liberia<br>(Full address to be updated)</span>
+              <span>Monrovia, Liberia<br>Mount Barclay Johnsonville</span>
             </div>
           </div>
           <div class="ci-item">
             <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
             <div>
               <strong>Phone</strong>
-              <span><a href="tel:+231555000000">+231 555 000 000</a></span>
+              <span>
+                <a href="tel:+231777777992" class="d-block">0777-777-992</a>
+                <a href="tel:+231776414695" class="d-block mt-1">0776-414-695</a>
+                <a href="tel:+231880469995" class="d-block mt-1">0880-469-995</a>
+                <a href="tel:+231886211265" class="d-block mt-1">0886-211-265</a>
+              </span>
             </div>
           </div>
           <div class="ci-item">
