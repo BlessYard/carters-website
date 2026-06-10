@@ -300,33 +300,36 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
 
 <section class="section-pad">
   <div class="container">
-    <div class="row justify-content-center text-center mb-5 reveal">
-     
+
     <!-- Leadership -->
     <div class="text-center mb-4 reveal">
-       <span class="section-label">Our Leadership</span>
-        <h2 class="section-title">Administration</h2>
-         <div class="divider center"></div>
+      <span class="section-label">Our Leadership</span>
+      <h2 class="section-title">Administration</h2>
+      <div class="divider center"></div>
     </div>
+
     <div class="row g-4 justify-content-center mb-5">
       <?php $leaders=[
-        ['Principal','Carter\'s Academy','Founder & Principal','fas fa-user-tie'],
-        ['Vice Principal','Deputy Academic','Vice Principal','fas fa-user-graduate'],
-        ['Administrator','Admin Office','School Administrator','fas fa-briefcase'],
+      
+        ['Mr & Mrs Carter',       'proprietors',    'mr&mrs-carter.jpeg'],
+        ['Administrator',    'School Administrator',   'teachers.jpeg'],  ['Mr. Carter',       'Founder & Principal',    'acting-principal.jpeg']
       ];
-      foreach($leaders as $i=>[$name,$dept,$role,$icon]): ?>
+      foreach($leaders as $i=>[$name,$role,$img]): ?>
       <div class="col-sm-6 col-lg-4 reveal reveal-delay-<?=$i+1?>">
         <div class="faculty-card faculty-card--lead">
-          <div class="fc-avatar fc-avatar--lead"><i class="<?=$icon?>"></i></div>
+          <div class="fc-img-wrap">
+            <img src="assets/images/<?=$img?>" alt="<?=$name?>">
+            <div class="fc-role-badge"><?=$role?></div>
+          </div>
           <div class="fc-body">
             <h5><?=$name?></h5>
             <div class="fc-role"><?=$role?></div>
-            <div class="fc-dept"><?=$dept?></div>
           </div>
         </div>
       </div>
       <?php endforeach; ?>
     </div>
+
   </div>
 </section>
 
