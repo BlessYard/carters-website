@@ -163,24 +163,24 @@ $page_desc  = "Learn about CARE Academy's history, mission, vision, and core val
     </div>
 
     <!-- Leadership -->
-    <div class="text-center mb-4 reveal">
-      <span class="section-label">School Leadership</span>
-      <h3 class="section-title" style="font-size:1.5rem">Administration</h3>
+    <div class="team-group-label reveal">
+      <i class="fas fa-star me-2" style="color:var(--gold)"></i> School Leadership
     </div>
     <div class="row g-4 justify-content-center mb-5">
       <?php $leaders=[
-        ['Principal','Carter\'s Academy','Founder & Principal','fas fa-user-tie'],
-        ['Vice Principal','Deputy Academic','Vice Principal','fas fa-user-graduate'],
-        ['Administrator','Admin Office','School Administrator','fas fa-briefcase'],
+       ['Mr & Mrs Carter',       'proprietors',    'mr&mrs-carter.jpeg'],
+        ['Administrator',    'School Administrator',   'teachers.jpeg'],  ['Mr. Carter',       'Founder & Principal',    'acting-principal.jpeg'],
       ];
-      foreach($leaders as $i=>[$name,$dept,$role,$icon]): ?>
+      foreach($leaders as $i=>[$name,$role,$img]): ?>
       <div class="col-sm-6 col-lg-4 reveal reveal-delay-<?=$i+1?>">
-        <div class="faculty-card faculty-card--lead">
-          <div class="fc-avatar fc-avatar--lead"><i class="<?=$icon?>"></i></div>
-          <div class="fc-body">
-            <h5><?=$name?></h5>
-            <div class="fc-role"><?=$role?></div>
-            <div class="fc-dept"><?=$dept?></div>
+        <div class="team-card team-card--lead">
+          <div class="team-img-wrap">
+            <img src="assets/images/<?=$img?>" alt="<?=$name?>">
+            <div class="team-role-badge"><?=$role?></div>
+          </div>
+          <div class="team-body">
+            <h6 class="team-name"><?=$name?></h6>
+            <p class="team-dept"><?=$role?></p>
           </div>
         </div>
       </div>
@@ -188,35 +188,42 @@ $page_desc  = "Learn about CARE Academy's history, mission, vision, and core val
     </div>
 
     <!-- Teaching Staff -->
-    <div class="text-center mb-4 reveal">
-      <span class="section-label">Classroom Excellence</span>
-      <h3 class="section-title" style="font-size:1.5rem">Teaching Staff</h3>
+    <div class="team-group-label reveal">
+      <i class="fas fa-chalkboard-teacher me-2" style="color:var(--gold)"></i> Teaching Staff
     </div>
     <div class="row g-4">
       <?php $staff=[
-        ['Primary Teacher','Grades 1–3','fas fa-chalkboard-teacher'],
-        ['Primary Teacher','Grades 4–6','fas fa-chalkboard-teacher'],
-        ['English Teacher','Secondary','fas fa-book'],
-        ['Mathematics Teacher','Secondary','fas fa-calculator'],
-        ['Science Teacher','Secondary','fas fa-flask'],
-        ['Social Studies','Secondary','fas fa-globe-africa'],
-        ['ICT Teacher','All Levels','fas fa-laptop'],
-        ['Religious Studies','All Levels','fas fa-cross'],
-        ['Physical Education','All Levels','fas fa-running'],
+        ['teachers.jpeg',          'Teacher Name', 'Primary · Grades 1–3',    'A nurturing educator building strong foundations in literacy and numeracy for our youngest learners.'],
+        ['teachers.jpeg',          'Teacher Name', 'Primary · Grades 4–6',    'Dedicated to developing confident and capable learners ready for the secondary level.'],
+        ['acting-principal.jpeg',  'Teacher Name', 'Secondary · English',     'Inspiring a love of language and literature with strong communication skills.'],
+        ['teachers.jpeg',          'Teacher Name', 'Secondary · Mathematics', 'Making Mathematics accessible and exciting with solid problem-solving skills.'],
+        ['teachers.jpeg',          'Teacher Name', 'Secondary · Science',     'Bringing the sciences to life through hands-on experiments and real-world applications.'],
+        ['teachers.jpeg',          'Teacher Name', 'ICT · All Levels',        'Equipping students with essential digital literacy skills for a technology-driven world.'],
+        ['teachers.jpeg',          'Teacher Name', 'Religious Studies · All Levels', 'Guiding students in faith, values, and the moral foundations of CARE Academy.'],
+        ['teachers.jpeg',          'Teacher Name', 'Social Studies · Secondary',     'Connecting students to their community, history, and the wider world around them.'],
+        ['teachers.jpeg',          'Teacher Name', 'Physical Education · All Levels','Developing healthy, active, and disciplined students through sport and fitness.'],
       ];
-      foreach($staff as $i=>[$role,$level,$icon]): ?>
+      foreach($staff as $i=>[$img,$name,$dept,$bio]): ?>
       <div class="col-sm-6 col-lg-4 reveal reveal-delay-<?=($i%3)+1?>">
-        <div class="faculty-card">
-          <div class="fc-avatar"><i class="<?=$icon?>"></i></div>
-          <div class="fc-body">
-            <h6><?=$role?></h6>
-            <div class="fc-role"><?=$level?></div>
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="assets/images/<?=$img?>" alt="<?=$name?>">
+            <div class="team-role-badge">Teacher</div>
+          </div>
+          <div class="team-body">
+            <h6 class="team-name"><?=$name?></h6>
+            <p class="team-dept"><?=$dept?></p>
+            <p class="team-bio"><?=$bio?></p>
           </div>
         </div>
       </div>
       <?php endforeach; ?>
     </div>
-    <p class="text-center mt-4" style="font-size:.88rem;color:var(--muted)">* Full staff profiles and names will be added as the school grows. Contact us for specific enquiries.</p>
+
+    <p class="text-center mt-4" style="font-size:.88rem;color:var(--muted)">
+      * Full staff profiles and names will be added as the school grows. Contact us for specific enquiries.
+    </p>
+
   </div>
 </section>
 
