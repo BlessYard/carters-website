@@ -53,40 +53,6 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
             <span></span><span></span><span></span>
         </div>
     </section>
-<!-- ===== HERO ===== -->
-<!-- <section class="hero-section" id="home">
-  <div class="hero-overlay"></div>
-  <div class="hero-particles"></div>
-  <div class="container hero-content">
-    <div class="row align-items-center min-vh-hero">
-      <div class="col-lg-7">
-        <div class="hero-badge reveal">
-          <i class="fas fa-star"></i> Faith-Based Excellence in Liberia
-        </div>
-        <h1 class="hero-title reveal reveal-delay-1">
-          Where Every Child's<br>
-          <span class="hero-accent">Light Shines</span><br>
-          Beyond Darkness
-        </h1>
-        <p class="hero-sub reveal reveal-delay-2">
-          Carter's Academy for Remarkable Excellence (CARE Academy) is committed to nurturing young minds with faith, knowledge, and character — preparing tomorrow's leaders today.
-        </p>
-        <div class="d-flex flex-wrap gap-3 mt-4 reveal reveal-delay-3">
-          <a href="admissions.php" class="btn-care btn-primary-care btn-lg-care">
-            <i class="fas fa-file-alt"></i> Apply for Admission
-          </a>
-          <a href="about.php" class="btn-care btn-outline-care btn-lg-care">
-            <i class="fas fa-play-circle"></i> Discover Our School
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="hero-scroll-hint">
-    <span>Scroll Down</span>
-    <i class="fas fa-chevron-down"></i>
-  </div>
-</section> -->
 
 <!-- ===== QUICK INFO STRIP ===== -->
 <div class="quick-strip">

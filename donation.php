@@ -50,7 +50,7 @@ $page_desc  = "Support Carter's Academy for Remarkable Excellence. Your donation
       </div>
       <div class="col-lg-6 reveal reveal-delay-2">
         <div class="donation-img-wrap">
-          <img src="assets/images/donation-impact.jpg" alt="Students at CARE Academy">
+          <img src="assets/images/caresfamily.jpeg" alt="Students at CARE Academy">
           <div class="donation-motto-badge">
             <i class="fas fa-heart me-2"></i>
             "No Child Should Be Left Behind"
