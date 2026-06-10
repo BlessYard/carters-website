@@ -4,7 +4,7 @@ $page_desc  = "Get in touch with Carter's Academy for Remarkable Excellence. Con
 ?>
 <?php include 'php/header.php'; ?>
 
-<section class="page-hero">
+<section class="page-hero" >
   <div class="hero-glow"></div>
   <div class="container position-relative">
     <span class="section-label">Get In Touch</span>
