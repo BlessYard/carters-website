@@ -536,3 +536,14 @@ h1, h2, h3, h4, h5 {
   display: inline-flex;
   align-items: center;
 }
+
+.faculty-card{background:var(--white);border:1.5px solid var(--border-light);border-radius:var(--radius-lg);padding:1.75rem;text-align:center;box-shadow:var(--shadow-sm);transition:var(--transition);height:100%}
+.faculty-card:hover{box-shadow:var(--shadow-md);transform:translateY(-4px);border-color:var(--gold)}
+.faculty-card--lead{border-top:3px solid var(--gold)}
+.fc-avatar{width:72px;height:72px;background:var(--gold-pale);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.75rem;color:var(--gold);margin:0 auto 1.25rem;transition:var(--transition)}
+.faculty-card:hover .fc-avatar{background:var(--gold);color:var(--white)}
+.fc-avatar--lead{width:88px;height:88px;font-size:2rem;background:var(--gold);color:var(--white)}
+.faculty-card h5,.faculty-card h6{font-family:var(--font-head);font-weight:700;color:var(--dark);margin-bottom:.25rem}
+.fc-role{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:.2rem}
+.fc-dept{font-size:.82rem;color:var(--muted)}
+.why-card:hover{background:rgba(255,255,255,.1)!important;transform:translateY(-3px)}

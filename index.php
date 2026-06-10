@@ -272,7 +272,7 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
       </div>
       <div class="col-6 col-md-3">
         <div class="stat-item">
-          <div class="stat-num"><span class="counter" data-target="12" data-suffix="">0</span></div>
+          <div class="stat-num"><span class="counter" data-target="8" data-suffix="">0</span></div>
           <div class="stat-label">Grade Levels</div>
         </div>
       </div>
@@ -299,7 +299,7 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
         <div class="programme-card">
           <div class="prog-icon"><i class="fas fa-child"></i></div>
           <div class="prog-body">
-            <div class="prog-level">Grades 1 – 6</div>
+            <div class="prog-level">Grades 1 – 3</div>
             <h4>Primary School</h4>
             <p>Our primary programme builds foundational literacy, numeracy, and life skills in a nurturing, faith-filled environment where every child is known and valued.</p>
             <a href="academics.php#primary" class="prog-link">Explore Programme <i class="fas fa-arrow-right"></i></a>
@@ -310,7 +310,7 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
         <div class="programme-card">
           <div class="prog-icon"><i class="fas fa-graduation-cap"></i></div>
           <div class="prog-body">
-            <div class="prog-level">Grades 7 – 12</div>
+            <div class="prog-level">Grades 4 – 8</div>
             <h4>Secondary School</h4>
             <p>Our secondary programme prepares students for higher education and life, offering a rigorous curriculum aligned with Liberian national standards and global best practices.</p>
             <a href="academics.php#secondary" class="prog-link">Explore Programme <i class="fas fa-arrow-right"></i></a>
@@ -333,83 +333,38 @@ $page_desc  = "CARE Academy: A faith-based Primary & Secondary school in Liberia
   </div>
 </section>
 
-
-<!-- ===== LEADERSHIP & TEACHERS PREVIEW ===== -->
-<section class="section-pad" style="background:var(--light)">
+<section class="section-pad">
   <div class="container">
-    <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-5">
-      <div class="reveal">
-        <span class="section-label">The People Behind the Vision</span>
-        <h2 class="section-title mb-0">Leadership & Teachers</h2>
-        <div class="divider"></div>
-      </div>
-      <a href="faculty.php" class="btn-care btn-dark-care reveal">Meet Full Team <i class="fas fa-arrow-right ms-1"></i></a>
+    <div class="row justify-content-center text-center mb-5 reveal">
+     
+    <!-- Leadership -->
+    <div class="text-center mb-4 reveal">
+       <span class="section-label">Our Leadership</span>
+        <h2 class="section-title">Administration</h2>
+         <div class="divider center"></div>
     </div>
-    <div class="row g-4">
-
-      <!-- Principal -->
-      <div class="col-sm-6 col-lg-3 reveal reveal-delay-1">
-        <div class="team-card team-card--lead">
-          <div class="team-img-wrap">
-            <img src="assets/images/principal.jpg" alt="Principal">
-            <div class="team-role-badge">Principal</div>
-          </div>
-          <div class="team-body">
-            <h6 class="team-name">Mr. Carter</h6>
-            <p class="team-dept">Founder & Principal</p>
-            <p class="team-bio">Passionate educator and visionary leader committed to quality, faith-based education for every child in Liberia.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Vice Principal -->
-      <div class="col-sm-6 col-lg-3 reveal reveal-delay-2">
-        <div class="team-card">
-          <div class="team-img-wrap">
-            <img src="assets/images/vice-principal.jpg" alt="Vice Principal">
-            <div class="team-role-badge">Vice Principal</div>
-          </div>
-          <div class="team-body">
-            <h6 class="team-name">Mrs. Carter</h6>
-            <p class="team-dept">Co-Founder & Vice Principal</p>
-            <p class="team-bio">Dedicated to student welfare, academic excellence, and building a school culture rooted in faith and integrity.</p>
+    <div class="row g-4 justify-content-center mb-5">
+      <?php $leaders=[
+        ['Principal','Carter\'s Academy','Founder & Principal','fas fa-user-tie'],
+        ['Vice Principal','Deputy Academic','Vice Principal','fas fa-user-graduate'],
+        ['Administrator','Admin Office','School Administrator','fas fa-briefcase'],
+      ];
+      foreach($leaders as $i=>[$name,$dept,$role,$icon]): ?>
+      <div class="col-sm-6 col-lg-4 reveal reveal-delay-<?=$i+1?>">
+        <div class="faculty-card faculty-card--lead">
+          <div class="fc-avatar fc-avatar--lead"><i class="<?=$icon?>"></i></div>
+          <div class="fc-body">
+            <h5><?=$name?></h5>
+            <div class="fc-role"><?=$role?></div>
+            <div class="fc-dept"><?=$dept?></div>
           </div>
         </div>
       </div>
-
-      <!-- Teacher 1 -->
-      <div class="col-sm-6 col-lg-3 reveal reveal-delay-3">
-        <div class="team-card">
-          <div class="team-img-wrap">
-            <img src="assets/images/teacher-1.jpg" alt="Primary Teacher">
-            <div class="team-role-badge">Teacher</div>
-          </div>
-          <div class="team-body">
-            <h6 class="team-name">Teacher Name</h6>
-            <p class="team-dept">Primary School · Grades 1–3</p>
-            <p class="team-bio">Nurturing young learners with patience, creativity, and a genuine love for foundational education.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Teacher 2 -->
-      <div class="col-sm-6 col-lg-3 reveal reveal-delay-4">
-        <div class="team-card">
-          <div class="team-img-wrap">
-            <img src="assets/images/teacher-2.jpg" alt="Secondary Teacher">
-            <div class="team-role-badge">Teacher</div>
-          </div>
-          <div class="team-body">
-            <h6 class="team-name">Teacher Name</h6>
-            <p class="team-dept">Secondary School · Mathematics</p>
-            <p class="team-bio">Bringing energy and clarity to Mathematics, helping students build confidence and strong analytical skills.</p>
-          </div>
-        </div>
-      </div>
-
+      <?php endforeach; ?>
     </div>
   </div>
 </section>
+
 <!-- ===== NO CHILD LEFT BEHIND ===== -->
 <section class="nclb-section reveal">
   <div class="container">

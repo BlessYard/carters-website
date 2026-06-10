@@ -85,6 +85,9 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
           <a class="nav-link <?= $current_page === 'gallery' ? 'active' : '' ?>" href="gallery.php">Gallery</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link <?= $current_page === 'faculty' ? 'active' : '' ?>" href="faculty.php">Faculty</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link <?= $current_page === 'news' ? 'active' : '' ?>" href="news.php">News</a>
         </li>
         
