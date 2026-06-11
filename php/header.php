@@ -98,7 +98,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
           <a class="nav-link <?= $current_page === 'contact' ? 'active' : '' ?>" href="contact.php">Contact</a>
         </li>
         <li class="nav-item ms-lg-2">
-          <a class="nav-link nav-admit-btn btn-care" href="admissions.php#apply">Apply Now</a>
+          <a class="nav-link nav-admit-btn btn-care" href="https://portal.academyforcare.com" target="_blank">E-Portal</a>
         </li>
       </ul>
     </div>

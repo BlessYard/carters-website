@@ -6,7 +6,7 @@
       <!-- Brand Column -->
       <div class="col-lg-4">
         <div class="footer-brand">
-          <img src="images/logo-white.png" alt="CARE Academy" class="footer-logo">
+          <img src="assets/images/carter-logo.jpeg" alt="CARE Academy" class="footer-logo">
           <div class="footer-name">Carter's Academy for<br>Remarkable Excellence</div>
           <div class="footer-motto">"Light Beyond Darkness"</div>
           <p>A faith-based institution dedicated to nurturing young minds, building strong character, and empowering the next generation of Liberian leaders through quality, inclusive education.</p>
